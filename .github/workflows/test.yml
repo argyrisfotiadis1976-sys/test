@@ -17,11 +17,11 @@ jobs:
         uses: azure/acr-build@v1
 
         with:
-          service_principal: ${{ secrets.service_principal }}
-          service_principal_password: ${{ secrets.service_principal_password }}
-          tenant: ${{ secrets.tenant }}
-          registry: ${{ secrets.registry }}
-          repository: ${{ secrets.repository }}
+          service_principal: 89d9e672-53e7-4697-ac47-e0e520ea5936
+          service_principal_password: 7~x8Q~LsEZ8SenFMWtHqXMNDef_aWy1ZxI8BCatv
+          tenant: 8d3821b4-4140-40af-b1f4-acddc80e4e08
+          registry: AppContReg
+          repository: myrepo
           image: image
           git_access_token: ${{ secrets.git_access_token }}
           folder: src/docker
